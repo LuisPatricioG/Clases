@@ -1,10 +1,10 @@
 const  Maestro = require('./Maestro')
 
-class maestroDeFisica extends Maestro {
-  constructor(materia, calificaciones, promedio, antiguedad) {
-    super(materia, calificaciones, promedio)
-    this.antiguedad = antiguedad
+class MaestroDeFisica extends Maestro {
+  constructor(materia, calificaciones, antiguedad){
+      super(materia, calificaciones);
+      this.antiguedad = antiguedad;
   }
 }
 
-module.exports = maestroDeFisica;
+module.exports = MaestroDeFisica;
