@@ -1,8 +1,6 @@
-const maestroDeFisica = require('./maestroDeFisica')
-const maestroDeMusica = require('./maestroMusica')
+const MaestroDeFisica = require('./MaestroDeFisica');
 
-const profe1 = new maestroDeFisica ("fisica", [100,90,80], 0)
-const promedioprofe1 = profe1.calcularPromedio()
+const profe_1 = new MaestroDeFisica('fisica', [7,8,5,1,10,5,2,3,5], 8);
 
 
-console.log(promedioprofe1)
+console.log( profe_1.calcularPromedio() );
