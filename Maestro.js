@@ -1,20 +1,19 @@
-
 class Maestro {
-  constructor(materia, calificaciones, promedio) {
-    this.materia = materia;
-    this.calificaciones = calificaciones;
-    this.promedio = promedio;
+  constructor(materia, calificaciones){
+      this.materia = materia;
+      this.calificaciones = calificaciones;
   }
 
-  calcularPromedio () {
-    console.log(`hola`)
-    let sumaTotal = 0;
-    for (let i = 0; i < this.calificaciones.lenght; i++) {
-      sumaTotal += this.calificaciones[i]
-    }
-    console.log("hola2")
-    this.promedio = 1
-    }
+  calcularPromedio(){
+      let sumaTotal = 0;
+      // for(let calificacion in this.calificaciones ){
+      //   // console.log(this.calificaciones[calificacion])
+      //   sumaTotal += this.calificaciones[calificacion]
+      // }
+      this.calificaciones.forEach((calificacion) => {
+        sumaTotal += calificacion;
+      });
+      return (sumaTotal/this.calificaciones.length);
   }
-
-module.exports = Maestro;
+}
+module.exports = Maestro
