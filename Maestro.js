@@ -6,10 +6,6 @@ class Maestro {
 
   calcularPromedio(){
       let sumaTotal = 0;
-      // for(let calificacion in this.calificaciones ){
-      //   // console.log(this.calificaciones[calificacion])
-      //   sumaTotal += this.calificaciones[calificacion]
-      // }
       this.calificaciones.forEach((calificacion) => {
         sumaTotal += calificacion;
       });
